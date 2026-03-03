@@ -1,15 +1,12 @@
 {
+  "cleanUrls": true,
   "headers": [
     {
-      "source": "/OlliesMultiTool.exe",
+      "source": "/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "application/octet-stream"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=OlliesMultiTool.exe"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     }
